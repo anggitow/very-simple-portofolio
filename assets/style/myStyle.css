@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.jumbotron {
+    font-size: 20px;
+    padding: 40px;
+    background-color: #39a6a3;
+    text-align: center;
+    color: white;
+}
+nav {
+    background-color: #bf1363;
+    padding: 5px;
+    top: 0;
+    text-align: center;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+nav a:hover {
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+    overflow: auto;
+}
+#content {
+    float: left;
+    width: 75%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+footer {
+    padding: 5px;
+    background-color: #bf1363;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    text-align: center;
+}
+h2, h3 {
+    color: #231e23;
+}
+.profile img {
+    width: 200px;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    text-align: right;
+}
+td {
+    text-align: left;
+}
+
+* {
+    box-sizing: border-box
+}
+.mySlides1, .mySlides2 {
+    display: none
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
